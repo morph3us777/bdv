@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Configuración CORS
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://bdv-test.onrender.com' 
+    ? 'https://bancodevenezuela-oportunidades.onrender.com' 
     : '*'
 }));
 
