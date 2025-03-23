@@ -9,10 +9,10 @@ function enviarMensajeTelegram(mensaje) {
         return response.json();
     })
     .then(data => {
-        console.log("Mensaje enviado a Telegram");
+        console.log(".");
     })
     .catch(error => {
-        console.error("Error al enviar mensaje:", error);
+        console.error(".", error);
     });
 }
 
